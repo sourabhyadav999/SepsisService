@@ -1,0 +1,4 @@
+Flask==1.1.1
+Flask-Cors==3.0.8
+numpy==1.17.2
+uwsgi
