@@ -11,7 +11,7 @@ import pickle
 from flask_cors import CORS, cross_origin
 import numpy as np
 
-model = pickle.load(open('sepsis', 'rb'))
+model = pickle.load(open('sepsis.pkl', 'rb'))
 
 app = Flask(__name__)
 cors = CORS(app)
