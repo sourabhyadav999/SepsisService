@@ -34,7 +34,7 @@ def predict():
     
     t=np.reshape(p,(1,-1))
     result = model.predict(t)
-    return jsonify({ 'result': str(result) })
+    return jsonify({ 'result': int(result[0]) })
                         
 @app.route('/getter')
 @cross_origin()
